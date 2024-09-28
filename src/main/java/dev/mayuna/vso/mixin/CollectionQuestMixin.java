@@ -47,7 +47,7 @@ public class CollectionQuestMixin {
         if (lastQuestCollection != null) {
             if (System.currentTimeMillis() - lastQuestCollection.getTimeMillis() < 5000) {
                 // Less than 1 seconds since last collection -> cancel
-                VsoMod.LOGGER.info("Skipping quest collection for player {}", player.getName().getString());
+                //VsoMod.LOGGER.info("Skipping quest collection for player {}", player.getName().getString());
                 ci.cancel();
                 return;
             }
@@ -59,6 +59,6 @@ public class CollectionQuestMixin {
         lastQuestCollection.setQuestId(questId);
         lastQuestCollection.setTimeMillis(System.currentTimeMillis());
         // Continue with the execution
-        VsoMod.LOGGER.info("Querying quest collection for player {} @ id {}", player.getName().getString(), questId);
+        //VsoMod.LOGGER.info("Querying quest collection for player {} @ id {}", player.getName().getString(), questId);
     }
 }
