@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.mayuna.vso.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "vso.refmap.json",
+  "mixins": [
+    "AbilityTreeMixin",
+    "CardDeckCacheMixin",
+    "CollectionQuestMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
